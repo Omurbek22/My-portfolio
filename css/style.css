@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+body{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    
+}
+
+
+
+.navigation{
+
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.747);
+    color: white;
+    height: 75px;
+    align-items: center;
+    transition: 0.9s;
+}
+.list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.list li{
+    list-style: none;
+    margin: 0 2%;
+}
+
+
+.list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.list li a:hover{
+    
+    color: rgba(255, 255, 255, 0.493);
+}
+
+.icon{
+    display: none;
+}
+.icon li{
+    list-style: none;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+@media (max-width:570px) {
+    .list{
+        display: none;
+    }
+    .icon{
+        display: block;
+        position: absolute;
+        left: 80%;
+        top: 0px;
+    }
+    .navigation.active{
+        height: 100vh;
+        
+    }
+    .navigation.active .list{
+        display: block;
+        padding: 0;
+    }
+    .navigation.active .list li a {
+        font-size: 25px;
+        border-bottom: 1px solid white;
+    }
+    .navigation.active .list li{
+        margin-top: 40px;
+        text-align: center;
+    }
+
+      
+}
+
+
+.navMain{
+    background: url('https://javasea.ru/uploads/posts/2009-08/1249230927_1242658171.jpg') center / cover fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.mainIcon{
+    width: 100%;
+    height: 50px;
+}
+.mainIcon i{
+    color: white;
+    border: 2px solid white;
+    padding: 35px;
+    border-radius: 50%;
+    font-size: 60px;
+    position: relative;
+    top: 170px;
+}
+.navtext{
+    width: 100%;
+    position: relative;
+    top: 260px;
+    color: rgb(255, 255, 255);
+}
+.navtext h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.navtext p{
+    font-size: 20px;
+}
+
+
+
+
+.contactIcon{
+    width: 100%;
+    position: relative;
+    top: 300px;
+}
+
+
+.contactIcon ul{
+    margin: 0 auto;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+
+.contactIcon ul li a i{
+    font-size: 40px;
+}
+
+.contactIcon ul li a{
+    color: white;
+    text-decoration: none;
+}
+.contactIcon ul li{
+    list-style: none;
+    margin: 0 10px;
+
+}
+
+.sc_1{
+    width: 100%;
+    height: 100vh;
+    background: url('https://images3.alphacoders.com/808/thumb-1920-80899.jpg') center / cover fixed;
+
+    
+}
+.mainText{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+.myWcardtext p{
+    padding: 0px 50px;
+}
+
+.mainText h1{
+    margin: 0px;
+    color: white;
+
+}
+.mainTextLines{
+    width: 40px;
+    margin: 0 auto;
+    padding-bottom: 13px;
+    border-bottom: white 3px solid;
+}
+
+.services{
+    width:100%;
+    display: flex; 
+    color: white;
+    justify-content: center;
+    position: relative;
+    top: 120px;
+}
+.servicesCard1{
+    text-align: center;
+    width: 300px;
+    margin: 0 20px;
+}
+
+
+
+
+.servicesCard1 i{
+    font-size: 40px;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+.card1_text h1 , p{
+    font-weight: 300;
+}
+
+
+.more_services{
+    position: absolute;
+    top: 320px;
+    right: 20px;
+}
+
+.more_services ul li{
+    list-style: none;
+    
+    
+}
+
+.more_services ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.more_services ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+@media (max-width:370px) {
+    .icon{
+        display: block;
+        position: absolute;
+        left: 70%;
+        top: 0px;
+    }
+}
+@media (max-width:670px) {
+    .servicesCard1 i{
+        font-size: 30px;
+        padding: 20px;
+        margin: 0px;
+        text-align: center;
+        margin-top: 30px;
+        border: 4px solid white;
+        border-radius: 50%;
+    }
+    .navtext h1{
+        font-size: 35px;
+        margin: 10px;
+    }
+    .navtext p{
+        margin: 10px;
+    }
+    .card1_text h1{
+        font-size: 20px;
+    }
+    .card1_text p{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width:590px){
+    .mainIcon i{
+        color: white;
+        border: 2px solid white;
+        padding: 35px;
+        border-radius: 50%;
+        font-size: 40px;
+        position: relative;
+        top: 170px;
+    }
+    .sc_1{
+        height: 140vh;
+    }
+    .more_services{
+        position: absolute;
+        top: 630px;
+        right: 20px;
+    }
+    .servicesCard1 i{
+        padding: 10px;
+    }
+    .card1_text{
+        width: 200px;
+        margin: 0px auto;
+
+    }
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+        top: 60px;
+    }
+    .mainText{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 50px;
+    }
+    .servicesCard1{
+        width: 300px;
+        margin: 0 20px;
+
+    }
+    
+}
+
+
+
+
+.myWtext{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+.sc_2{
+    width: 100%;
+    height: 89vh;
+}
+.myWlines{
+    width: 40px;
+    background-color: black;
+    height: 4px;
+    margin: 0 auto;
+}
+.myWcards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.myWcards div{
+    width: 400px;
+    height: 33vh;
+    text-align: center;
+    transition: 0.5s;
+
+}
+.myWcards div:hover{
+    background-color: rgba(0, 0, 0, 0.589);
+}
+
+.myWcardtext{
+    color: rgba(255, 255, 255, 0);
+}
+.myWcardtext:hover{
+    position: relative;
+    left: 0px;
+    color: rgb(255, 255, 255);
+}
+.myWcardtext p{
+    margin-top: 20px
+    ;
+    margin: 10px 10px;
+}
+.myWcardtext h1{
+    padding-top: 20px;
+    margin: 0px;
+}
+.myWcard1{
+    background: url("/img/img_shino_Montazh.jpg") center / cover;
+}
+
+.myWcard2{
+    background: url("/img/ZAMENA-MASLA.jpg") center / cover;
+
+}
+.myWcard3{
+    background: url("/img/slesor_work.jpg") center / cover;
+}
+.myWcard4{
+    background: url("/img/copital_remont.jpeg") center / cover;
+}
+.myWcard5{
+    background: url("/img/kuzovnoi_remont.webp") center / cover;
+}
+.myWcard6{
+    background: url("/img/ustonovks_multypleer.jpg") center / cover;
+}
+
+@media (max-width:400px) {
+    .myWcards div{
+        width: 300px;
+        height: 33vh;
+        text-align: center;
+        transition: 0.5s;
+    }
+    
+    
+}
+
+.myWcardtext p{
+    margin: 0px;
+}
+@media (max-width:300px) {
+    .myWcards div{
+        width: 200px;
+        height: 33vh;
+        text-align: center;
+        transition: 0.5s;
+    
+    }
+    
+    .myWcardtext h1{
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
