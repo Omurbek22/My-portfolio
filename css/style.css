@@ -2,18 +2,18 @@
 
 
 
-
 body{
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
-    
 }
 
 
+.contactIcon ul{
+    padding: 0px;
+}
 
 .navigation{
-
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -25,39 +25,36 @@ body{
     align-items: center;
     transition: 0.9s;
 }
+
 .list{
     width: 100%;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
+
 .list li{
     list-style: none;
     margin: 0 2%;
 }
-
 
 .list li a{
     text-decoration: none;
     color: white;
     font-size: 15px;
 }
+
 .list li a:hover{
-    
     color: rgba(255, 255, 255, 0.493);
 }
 
 .icon{
     display: none;
 }
+
 .icon li{
     list-style: none;
     font-size: 30px;
 }
-
-
-
-
 
 
 
@@ -87,21 +84,20 @@ body{
         margin-top: 40px;
         text-align: center;
     }
-
-      
 }
-
 
 .navMain{
     background: url('https://javasea.ru/uploads/posts/2009-08/1249230927_1242658171.jpg') center / cover fixed;
     width: 100%;
-    height: 100vh;
+    height: 700px;
     text-align: center;
 }
+
 .mainIcon{
     width: 100%;
     height: 50px;
 }
+
 .mainIcon i{
     color: white;
     border: 2px solid white;
@@ -111,22 +107,22 @@ body{
     position: relative;
     top: 170px;
 }
+
 .navtext{
     width: 100%;
     position: relative;
     top: 260px;
     color: rgb(255, 255, 255);
 }
+
 .navtext h1{
     font-size: 40px;
     font-weight: 700;
 }
+
 .navtext p{
     font-size: 20px;
 }
-
-
-
 
 .contactIcon{
     width: 100%;
@@ -134,14 +130,12 @@ body{
     top: 300px;
 }
 
-
 .contactIcon ul{
     margin: 0 auto;
     display: flex;
     width: 20%;
     justify-content: center;
     justify-content: space-around;
-
 }
 
 .contactIcon ul li a i{
@@ -152,24 +146,32 @@ body{
     color: white;
     text-decoration: none;
 }
+
 .contactIcon ul li{
     list-style: none;
     margin: 0 10px;
-
 }
+
+
+
+
+
+
+
+
+
 
 .sc_1{
     width: 100%;
-    height: 100vh;
-    background: url('https://images3.alphacoders.com/808/thumb-1920-80899.jpg') center / cover fixed;
-
-    
+    padding-top: 20px;
+    padding-bottom: 70px;
+    background: url('https://images3.alphacoders.com/808/thumb-1920-80899.jpg') center / cover fixed;    
 }
+
 .mainText{
     width: 100%;
     text-align: center;
-    position: relative;
-    top: 100px;
+    margin: 50px 0px;
 }
 
 .myWcardtext p{
@@ -177,10 +179,11 @@ body{
 }
 
 .mainText h1{
-    margin: 0px;
+    margin: 0px 0px;
     color: white;
 
 }
+
 .mainTextLines{
     width: 40px;
     margin: 0 auto;
@@ -193,24 +196,19 @@ body{
     display: flex; 
     color: white;
     justify-content: center;
-    position: relative;
-    top: 120px;
 }
+
 .servicesCard1{
     text-align: center;
     width: 300px;
     margin: 0 20px;
 }
 
-
-
-
 .servicesCard1 i{
     font-size: 40px;
     padding: 30px;
     margin: 20px;
     text-align: center;
-    margin-top: 40px;
     border: 4px solid white;
     border-radius: 50%;
 }
@@ -219,17 +217,29 @@ body{
     font-weight: 300;
 }
 
-
 .more_services{
-    position: absolute;
-    top: 320px;
-    right: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: end;
 }
 
 .more_services ul li{
     list-style: none;
     
     
+}
+
+.blok_shadow{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+    box-shadow:0px 0px 10px black,
+    0px 0px 20px black,
+    0px 0px 30px black,
+    0px 0px 40px black,
+    0px 0px 50px black,
+    0px 0px 60px black,
+    0px 0px 70px black ;
 }
 
 .more_services ul li a{
@@ -240,10 +250,13 @@ body{
     border-radius: 5px;
     transition: 0.5s;
 }
+
 .more_services ul li a:hover{
     background-color: white;
     color: black;
 }
+
+
 
 @media (max-width:370px) {
     .icon{
@@ -253,6 +266,7 @@ body{
         top: 0px;
     }
 }
+
 @media (max-width:670px) {
     .servicesCard1 i{
         font-size: 30px;
@@ -262,6 +276,7 @@ body{
         margin-top: 30px;
         border: 4px solid white;
         border-radius: 50%;
+        
     }
     .navtext h1{
         font-size: 35px;
@@ -278,7 +293,6 @@ body{
     }
 }
 
-
 @media (max-width:590px){
     .mainIcon i{
         color: white;
@@ -289,14 +303,7 @@ body{
         position: relative;
         top: 170px;
     }
-    .sc_1{
-        height: 140vh;
-    }
-    .more_services{
-        position: absolute;
-        top: 630px;
-        right: 20px;
-    }
+    
     .servicesCard1 i{
         padding: 10px;
     }
@@ -308,17 +315,26 @@ body{
     .services{
         display: flex;
         flex-wrap: wrap;
-        top: 60px;
     }
     .mainText{
         width: 100%;
         text-align: center;
         position: relative;
-        top: 50px;
     }
     .servicesCard1{
         width: 300px;
         margin: 0 20px;
+
+    }
+    .more_services{
+        width: 100%;
+        text-align: center;
+    }
+
+    .more_services a{
+        top: 10px;
+        position: relative;
+        right: 22px;
 
     }
     
@@ -327,21 +343,32 @@ body{
 
 
 
+
+
+
+
+
+
+.sc_2{
+    width: 100%;
+    padding: 20px 0px;
+    padding-bottom: 70px;
+
+}
+
 .myWtext{
     width: 100%;
     text-align: center;
     padding-top: 30px;
 }
-.sc_2{
-    width: 100%;
-    height: 89vh;
-}
+
 .myWlines{
     width: 40px;
     background-color: black;
     height: 4px;
     margin: 0 auto;
 }
+
 .myWcards{
     width: 100%;
     display: flex;
@@ -350,13 +377,14 @@ body{
     flex-wrap: wrap;
     margin: 0 auto;
 }
+
 .myWcards div{
     width: 400px;
-    height: 33vh;
+    height: 250px;
     text-align: center;
     transition: 0.5s;
-
 }
+
 .myWcards div:hover{
     background-color: rgba(0, 0, 0, 0.589);
 }
@@ -364,20 +392,32 @@ body{
 .myWcardtext{
     color: rgba(255, 255, 255, 0);
 }
+
 .myWcardtext:hover{
     position: relative;
     left: 0px;
     color: rgb(255, 255, 255);
 }
+
 .myWcardtext p{
     margin-top: 20px
     ;
     margin: 10px 10px;
 }
+
 .myWcardtext h1{
     padding-top: 20px;
     margin: 0px;
 }
+
+.myWcardtext p{
+    margin: 0px;
+}
+
+.cardHov{
+    cursor: pointer;
+}
+
 .myWcard1{
     background: url("/img/img_shino_Montazh.jpg") center / cover;
 }
@@ -399,6 +439,8 @@ body{
     background: url("/img/ustonovks_multypleer.jpg") center / cover;
 }
 
+
+
 @media (max-width:400px) {
     .myWcards div{
         width: 300px;
@@ -410,9 +452,6 @@ body{
     
 }
 
-.myWcardtext p{
-    margin: 0px;
-}
 @media (max-width:300px) {
     .myWcards div{
         width: 200px;
@@ -429,6 +468,349 @@ body{
     
     
 }
+
+
+
+
+
+
+
+
+
+
+.sc_3{
+    background: url('https://img2.goodfon.ru/wallpaper/nbig/e/8a/tekstura-chernyy-fon-uzor-oboi.jpg')center / cover fixed;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.whome{
+    width: 630px;
+    padding: 20px;
+    height: 300px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.288);
+}
+
+.whome_title{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.whome_title h1{
+    color: white;
+    margin: 0px;
+    text-decoration: white;
+
+}
+
+.whome_lines{
+    width: 40px;
+    background-color: rgb(255, 255, 255);
+    height: 4px;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+
+.whome_text{
+    color: white;
+    text-align: center;
+}
+
+.whome_text p{
+    font-size: 20px;
+}
+
+
+
+@media (max-width:800px) {
+    .whome{
+        width: 500px;
+        height: 250px;
+    }
+
+    .whome_text p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .whome{
+        width: 400px;
+        height: 250px;
+    }
+
+    .whome_text p{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 500px) {
+    .whome{
+        width: 300px;
+        height: 230px;
+    }
+
+    .whome_text p{
+        font-size: 15px;
+    }
+
+    .whome_title h1{
+        font-size: 20px;
+        color: white;
+        margin: 0px;
+        text-decoration: white;
+    
+    }
+}
+
+@media (max-width: 400px) {
+    .whome{
+        width: 250px;
+        height: 230px;
+    }
+
+    .whome_text p{
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.sc_4{
+    width: 100%;
+    height: 400px;
+    background: url("https://oir.mobi/uploads/posts/2021-03/thumbs/1616997167_13-p-fon-garazh-14.jpg") center / cover fixed;
+}
+
+
+
+
+
+
+
+
+
+
+.sc_5{
+    background: url('https://img2.goodfon.ru/wallpaper/nbig/e/8a/tekstura-chernyy-fon-uzor-oboi.jpg')center / cover fixed;
+    width: 100%;
+    /* height: 600px; */
+    padding: 50px 0px;
+}
+
+.contacts{
+    width: 100%;
+}
+
+.contact_img{
+    padding-top: 50px;
+    width: 300px;
+    /* height: 250px; */
+    margin: 0 auto;
+}
+
+.contact_img img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.cont_title{
+    width: 100%;
+    text-align: center;
+}
+
+.cont_lines{
+    width: 40px;
+    background-color: rgb(0, 0, 0);
+    height: 4px;
+    margin: 0 auto;
+    /* margin-top: 13px; */
+}
+
+.cont_lr{
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+}
+
+.cont_left{
+    width: 50%;
+}
+
+.contact_form{
+    background-color: white;
+    width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.cont_add h2{
+    font-size: 17px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.cont_timew h2{
+    font-size: 17px;
+    font-weight: 400;
+    margin: 5px 0;
+
+}
+
+.cont_right{
+    width: 50%;
+}
+
+
+.cont_right h2{
+    margin: 0px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.cont_right input{
+   width: 100%;
+    height: 25px;
+}
+
+.sms_inp textarea{
+    width: 100%;
+    height: 100px;
+}
+
+.cont_btn{
+    width: 100%;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.cont_btn:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.inp_div{
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width:800px) {
+    .contact_form{
+        background-color: white;
+        width: 500px;
+        /* height: 600px; */
+        margin: 0 auto;
+        padding: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact_form{
+        background-color: white;
+        width: 450px;
+        margin: 0 auto;
+        padding: 50px;
+    }
+
+    .cont_add h2{
+        font-size: 15px;
+        font-weight: 400;
+        margin: 5px 0;
+    }
+    
+    .cont_timew h2{
+        font-size: 15px;
+        font-weight: 400;
+        margin: 5px 0;
+    
+    }
+
+    .cont_right h2{
+        margin: 0px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .contact_form{
+        padding: 30px;
+    }
+}
+
+@media (max-width:600px) {
+    .cont_lr{
+        display: block;
+    }
+
+    .contact_form{
+        background-color: rgb(255, 255, 255);
+        width: 60%;
+        margin: 0 auto;
+        padding: 50px;
+    }
+    .cont_left{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .cont_right{
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

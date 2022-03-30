@@ -1,5 +1,4 @@
 
-
 const cllick = document.querySelector('.toggle')
 const row = document.querySelector('.navigation')
 
@@ -9,8 +8,6 @@ cllick.addEventListener('click' , e=>{
 
     row.classList.toggle('active')
 })
-
-
 
 
 

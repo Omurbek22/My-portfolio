@@ -9,14 +9,14 @@
     <script src="https://kit.fontawesome.com/e0ee0a274c.js" cros    sorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header id="head_main">
         <div class="navigation">
             <ul class="list">
-                <li><a href="#">ГЛАВНАЯ</a></li>
-                <li><a href="#sevices">УСЛУГИ</a></li>
-                <li><a href="#">РАБОТЫ</a></li>
-                <li><a href="#">О НАС</a></li>
-                <li><a href="#">КОНТАКТЫ</a></li>
+                <li><a href="#head_main">ГЛАВНАЯ</a></li>
+                <li><a href="#services">УСЛУГИ</a></li>
+                <li><a href="#my_work">РАБОТЫ</a></li>
+                <li><a href="#my_info">О НАС</a></li>
+                <li><a href="#contacts">КОНТАКТЫ</a></li>
             </ul>
             <ul class="icon">
                 <li>
@@ -41,12 +41,17 @@
             </div>
         </div>
     </header>
+
+    <div class="blok_shadow">
+        <!-- Это блок для тени между первой и второй секции -->
+    </div>
+
     <main>
-        <section class="sc_1">
+        <section class="sc_1" id="services">
                 <div class="mainText">
                     <h1>УСЛУГИ</h1>
-                <div class="mainTextLines"></div> 
-            </div> 
+                    <div class="mainTextLines"></div> 
+                </div> 
                 <div class="services">
                     <div class="servicesCard1">
                         <i class="fas fa-hammer"></i>
@@ -69,17 +74,18 @@
                             <p>Покраска вашего автомобиля</p>
                         </div>
                     </div>
-                    <div class="more_services">
-                        <ul>
-                            <li>
-                                <a href="#">Подробнее</a>
-                            </li>
-                        </ul>
-                    </div>
+                    
+                </div>
+                <div class="more_services">
+                    <ul>
+                        <li>
+                            <a href="#">Подробнее</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
-        <section class="sc_2">
+        <section class="sc_2" id="my_work">
             <div class="myWtext">
                 <h1>НАШИ РАБОТЫ</h1>
                 <div class="myWlines"></div>
@@ -119,6 +125,74 @@
                     <div class="myWcardtext">
                         <h1>Установка мультимедии</h1>
                         <p>Установка мультимедии и звука, камер и дисплея</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sc_3" id="my_info">
+            <div class="whome">
+                <div class="whome_title">
+                    <h1>КТО МЫ</h1>
+                    <div class="whome_lines"></div>
+                </div>
+                <div class="whome_text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti et ullam optio dolorem quisquam, minus, dignissimos laboriosam voluptatibus maiores quos debitis sed esse, aliquam at sapiente ad. Repellat, perspiciatis quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </section>
+        <section class="sc_4">
+             
+        </section>
+        <section class="sc_5" id="contacts">
+            <div class="contacts">
+                <div class="contact_img">
+                    <img src="https://static.wixstatic.com/media/9b6c7d_8352a6ee5a454a98a5278f9628ccc4ca.png/v1/fill/w_288,h_234,al_c,usm_0.66_1.00_0.01,enc_auto/9b6c7d_8352a6ee5a454a98a5278f9628ccc4ca.png" >
+                </div>
+                <div class="contact_form">
+                    <div class="cont_title">
+                        <h1>ЖДЕМ ВАС</h1>
+                        <div class="cont_lines"></div>
+                    </div>
+                    <div class="cont_lr">
+                        <div class="cont_left">
+                            <div class="cont_add">
+                                <h2>ул. Арбат, 1а, Москва 119019, Россия</h2>
+                                <a href="#">info@mysite.ru</a>
+                                <h2>Телефон: +7 123 456-78-90</h2>
+                            </div>
+                            <div class="cont_timew">
+                                <h2>ВРЕМЯ РАБОТЫ:</h2>
+                                <br>
+                                <h2>ПН-ПТ: 7:00-22:00 </h2>
+                                <h2>СБ: 8:00</h2>
+                                <h2>ВС: Выходной!</h2>
+                            </div>
+                        </div>
+                        <div class="cont_right">
+                            <form action="#">
+                                <div class="name_inp inp_div">
+                                    <h2>Имя</h2>
+                                    <input type="text" placeholder="">
+                                </div>
+                                <div class="surname_inp inp_div">
+                                    <h2>Фамилия</h2>
+                                    <input type="text" placeholder="">
+                                </div>
+                                <div class="email_inp inp_div">
+                                    <h2>Ваш email</h2>
+                                    <input type="email" placeholder="">
+                                </div>
+                                <div class="num_inp inp_div">
+                                    <h2>Ваш номер</h2>
+                                    <input type="number" placeholder="">
+                                </div>
+                                <div class="sms_inp inp_div">
+                                    <h2>Соабщение</h2>
+                                    <textarea name=""></textarea>
+                                </div>
+                            </form>
+                            <button class="cont_btn">ОТПРАВИТЬ</button>
+                        </div>
                     </div>
                 </div>
             </div>
